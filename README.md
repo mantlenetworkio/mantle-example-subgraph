@@ -73,3 +73,5 @@ bin/cast send --legacy --rpc-url https://rpc.testnet.mantle.xyz \
     "createGravatar(string,string)" "Alice" "https://google.com/a.jpg"
 
 ```
+
+Then you can query indexed data from https://graph.testnet.mantle.xyz/subgraphs/name/example/graphql .
