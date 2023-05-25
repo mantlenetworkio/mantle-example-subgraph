@@ -13,8 +13,8 @@
     "build": "graph build",
     "deploy-testnet": "graph deploy example --ipfs https://ipfs.testnet.mantle.xyz --node https://graph.testnet.mantle.xyz/deploy",
     "deploy-local": "graph deploy example --ipfs http://127.0.0.1:5001 --node http://127.0.0.1:8020",
-    "redo-local": "yarn remove-local && yarn create-local && yarn deploy-local",
-    "redo": "yarn remove-testnet && yarn create-testnet && yarn deploy-testnet"
+    "redeploy-local": "yarn remove-local && yarn create-local && yarn deploy-local",
+    "redeploy": "yarn remove-testnet && yarn create-testnet && yarn deploy-testnet"
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "^0.30.2",

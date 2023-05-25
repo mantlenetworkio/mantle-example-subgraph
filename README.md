@@ -12,8 +12,10 @@ https://graph.testnet.mantle.xyz/subgraphs/name/example/graphql
 install foundry tools to ./bin
 
 ```bash
-# for mac silicon chip
-curl -sSL https://github.com/foundry-rs/foundry/releases/download/nightly/foundry_nightly_darwin_arm64.tar.gz | tar xzf - -C ./bin
+# for mac silicon chip, pls select the version fit your os/cpu platform
+pkg=https://github.com/foundry-rs/foundry/releases/download/nightly/foundry_nightly_darwin_arm64.tar.gz
+
+curl -sSL $pkg | tar xzf - -C ./bin
 
 export $PATH=$PWD/bin:$PATH
 ```
@@ -56,7 +58,7 @@ vim subgraph.yaml
 yarn codegen
 
 # see pacakges.json for what redo does
-yarn redo
+yarn redeploy
 
 ```
 
